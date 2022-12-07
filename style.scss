@@ -1,0 +1,410 @@
+@media (max-width: 500px) {
+	body {
+		margin: 0 20px;
+	}
+	.logo-menu {
+		display: flex;
+		justify-content: space-between;
+		.main-menu {
+			grid-area: menu-bar;
+			width: 30px;
+			height: 5px;
+			background-color: #222;
+			margin: 5px 0;
+			z-index: -1;
+		}
+
+		nav {
+			display: none;
+			text-align: left;
+			z-index: 1;
+			ul {
+				width: 300px;
+				background-color: #faf7f0;
+				li {
+					list-style-type: none;
+					margin: 50px 0;
+					padding-left: 50px;
+					a {
+						text-decoration: none;
+						color: #222;
+					}
+				}
+			}
+
+			#show-nav {
+				display: block;
+				z-index: 1;
+				ul {
+					width: 300px;
+					background-color: #faf7f0;
+					li {
+						list-style-type: none;
+						margin: 50px 0;
+						padding-left: 50px;
+						a {
+							text-decoration: none;
+							color: #222;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "logo" "menu-bar" "nav-bar" "web3-img" "text" "side" "about-web3" "c1" " c2 " "c3" "c4";
+		grid-auto-flow: row;
+
+		nav {
+			display: none;
+			visibility: hidden;
+			ul {
+				background-color: #faf7f0;
+				width: 300px;
+				height: 100vh;
+
+				li {
+					list-style-type: none;
+					display: block;
+
+					a {
+						text-decoration: none;
+						color: #222;
+					}
+				}
+			}
+		}
+
+		header {
+			grid-area: logo;
+		}
+		nav {
+			grid-area: nav-bar;
+		}
+		.web3-img {
+			grid-area: web3-img;
+			img {
+				width: 100%;
+			}
+		}
+		.text {
+			grid-area: text;
+		}
+		aside {
+			grid-area: side;
+			background-color: #25316d;
+			padding: 10px;
+
+			h1 {
+				color: white;
+				cursor: pointer;
+				&:hover {
+					color: gold;
+				}
+			}
+
+			h3 {
+				font-size: 24px;
+				color: #faf7f0;
+				cursor: pointer;
+			}
+
+			p {
+				color: #fff;
+				opacity: 0.6;
+			}
+		}
+
+		.about-web3 {
+			grid-area: about-web3;
+			margin: 20px 0;
+
+			p {
+				color: #222;
+				opacity: 0.9;
+			}
+
+			.button {
+				width: 75px;
+				padding: 15px 50px;
+				border: 1px solid #f65a83;
+				background-color: #f65a83;
+
+				a {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
+		.content1 {
+			grid-area: c1;
+			display: flex;
+			margin: 20px;
+			.pic {
+				width: 150px;
+				height: 150px;
+				margin-right: 10px;
+			}
+			.retro-text {
+				.number {
+					font-size: 50px;
+					opacity: 0.7;
+				}
+				h4 {
+					margin: 0;
+				}
+			}
+			.side-text {
+				margin: 2px;
+			}
+			&:hover .side-text {
+				color: gold;
+			}
+		}
+		.content2 {
+			grid-area: c2;
+			display: flex;
+			margin: 20px;
+			.pic {
+				width: 150px;
+				height: 150px;
+				margin-right: 10px;
+			}
+			.laptop-text {
+				.number {
+					font-size: 50px;
+					opacity: 0.7;
+				}
+				h4 {
+					margin: 0;
+				}
+			}
+		}
+		.content3 {
+			grid-area: c3;
+			display: flex;
+			margin: 20px;
+			.pic {
+				width: 150px;
+				height: 150px;
+				margin-right: 10px;
+			}
+		}
+		.gaming-text {
+			.number {
+				font-size: 50px;
+				opacity: 0.7;
+			}
+			h4 {
+				margin: 0;
+			}
+		}
+		.attribution {
+			grid-area: c4;
+			background-color: #25316d;
+			margin: 20px 0;
+			color: #fff;
+			height: 200px;
+			text-align: justi;
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+}
+@media (min-width: 600px) {
+	body {
+		margin: 0 200px;
+	}
+	.logo-menu {
+		display: flex;
+		justify-content: space-between;
+
+		nav {
+			ul {
+				li {
+					list-style-type: none;
+					float: left;
+					padding-left: 50px;
+					a {
+						text-decoration: none;
+						color: #222;
+					}
+				}
+			}
+		}
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			"logo nav-bar nav-bar"
+			"web3-img web3-img side"
+			"text about-web3 side"
+			"c1 c2 c3"
+			"c4 c4 c4";
+		grid-auto-flow: row;
+		gap: 20px;
+
+		.main-menu {
+			display: none;
+			grid-area: menu-bar;
+			width: 30px;
+			height: 5px;
+			background-color: #222;
+			margin: 5px 0;
+		}
+
+		nav {
+			display: none;
+			visibility: hidden;
+			ul {
+				background-color: #faf7f0;
+				width: 300px;
+				height: 100vh;
+
+				li {
+					list-style-type: none;
+					display: block;
+
+					a {
+						text-decoration: none;
+						color: #222;
+					}
+				}
+			}
+		}
+
+		header {
+			grid-area: logo;
+		}
+		nav {
+			grid-area: nav-bar;
+		}
+		.web3-img {
+			grid-area: web3-img;
+			img {
+				width: 100%;
+			}
+		}
+		.text {
+			grid-area: text;
+			font-size: 22px;
+		}
+		aside {
+			grid-area: side;
+			background-color: #25316d;
+			padding: 10px;
+			padding: 0 20px;
+			h1 {
+				color: white;
+				cursor: pointer;
+			}
+			hr {
+				margin: 10px;
+			}
+
+			h3 {
+				font-size: 24px;
+				color: #faf7f0;
+				cursor: pointer;
+			}
+
+			p {
+				color: #fff;
+				opacity: 0.6;
+			}
+			&:hover .side-text h1,
+			.heading-text {
+				color: gold;
+			}
+		}
+
+		.about-web3 {
+			grid-area: about-web3;
+			margin: 20px 0;
+
+			p {
+				color: #222;
+				opacity: 0.9;
+			}
+
+			.button {
+				width: 75px;
+				padding: 15px 50px;
+				border: 1px solid #f65a83;
+				background-color: #f65a83;
+
+				a {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
+		.content1 {
+			grid-area: c1;
+			display: flex;
+			margin: 20px;
+			.pic {
+				width: 150px;
+				height: 150px;
+				margin-right: 10px;
+			}
+			.retro-text {
+				h4 {
+					margin: 0;
+				}
+			}
+			.side-text {
+				margin: 2px;
+			}
+		}
+		.content2 {
+			grid-area: c2;
+			display: flex;
+			margin: 20px;
+			.pic {
+				width: 150px;
+				height: 150px;
+				margin-right: 10px;
+			}
+			.laptop-text {
+				h4 {
+					margin: 0;
+				}
+			}
+		}
+		.content3 {
+			grid-area: c3;
+			display: flex;
+			margin: 20px;
+			.pic {
+				width: 150px;
+				height: 150px;
+				margin-right: 10px;
+			}
+		}
+		.gaming-text {
+			h4 {
+				margin: 0;
+			}
+		}
+		.attribution {
+			grid-area: c4;
+			background-color: #25316d;
+			margin: 20px 0;
+			color: #fff;
+			height: 200px;
+			text-align: justi;
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+}

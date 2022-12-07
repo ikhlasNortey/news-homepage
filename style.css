@@ -1,0 +1,362 @@
+@media (max-width: 500px) {
+  body {
+    margin: 0 20px;
+  }
+  .logo-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-menu .main-menu {
+    grid-area: menu-bar;
+    width: 30px;
+    height: 5px;
+    background-color: #222;
+    margin: 5px 0;
+    z-index: -1;
+  }
+  .logo-menu nav {
+    display: none;
+    text-align: left;
+    z-index: 1;
+  }
+  .logo-menu nav ul {
+    width: 300px;
+    background-color: #faf7f0;
+  }
+  .logo-menu nav ul li {
+    list-style-type: none;
+    margin: 50px 0;
+    padding-left: 50px;
+  }
+  .logo-menu nav ul li a {
+    text-decoration: none;
+    color: #222;
+  }
+  .logo-menu nav #show-nav {
+    display: block;
+    z-index: 1;
+  }
+  .logo-menu nav #show-nav ul {
+    width: 300px;
+    background-color: #faf7f0;
+  }
+  .logo-menu nav #show-nav ul li {
+    list-style-type: none;
+    margin: 50px 0;
+    padding-left: 50px;
+  }
+  .logo-menu nav #show-nav ul li a {
+    text-decoration: none;
+    color: #222;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo" "menu-bar" "nav-bar" "web3-img" "text" "side" "about-web3" "c1" " c2 " "c3" "c4";
+    grid-auto-flow: row;
+  }
+  .wrapper nav {
+    display: none;
+    visibility: hidden;
+  }
+  .wrapper nav ul {
+    background-color: #faf7f0;
+    width: 300px;
+    height: 100vh;
+  }
+  .wrapper nav ul li {
+    list-style-type: none;
+    display: block;
+  }
+  .wrapper nav ul li a {
+    text-decoration: none;
+    color: #222;
+  }
+  .wrapper header {
+    grid-area: logo;
+  }
+  .wrapper nav {
+    grid-area: nav-bar;
+  }
+  .wrapper .web3-img {
+    grid-area: web3-img;
+  }
+  .wrapper .web3-img img {
+    width: 100%;
+  }
+  .wrapper .text {
+    grid-area: text;
+  }
+  .wrapper aside {
+    grid-area: side;
+    background-color: #25316d;
+    padding: 10px;
+  }
+  .wrapper aside h1 {
+    color: white;
+    cursor: pointer;
+  }
+  .wrapper aside h1:hover {
+    color: gold;
+  }
+  .wrapper aside h3 {
+    font-size: 24px;
+    color: #faf7f0;
+    cursor: pointer;
+  }
+  .wrapper aside p {
+    color: #fff;
+    opacity: 0.6;
+  }
+  .wrapper .about-web3 {
+    grid-area: about-web3;
+    margin: 20px 0;
+  }
+  .wrapper .about-web3 p {
+    color: #222;
+    opacity: 0.9;
+  }
+  .wrapper .about-web3 .button {
+    width: 75px;
+    padding: 15px 50px;
+    border: 1px solid #f65a83;
+    background-color: #f65a83;
+  }
+  .wrapper .about-web3 .button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .wrapper .content1 {
+    grid-area: c1;
+    display: flex;
+    margin: 20px;
+  }
+  .wrapper .content1 .pic {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  .wrapper .content1 .retro-text .number {
+    font-size: 50px;
+    opacity: 0.7;
+  }
+  .wrapper .content1 .retro-text h4 {
+    margin: 0;
+  }
+  .wrapper .content1 .side-text {
+    margin: 2px;
+  }
+  .wrapper .content1:hover .side-text {
+    color: gold;
+  }
+  .wrapper .content2 {
+    grid-area: c2;
+    display: flex;
+    margin: 20px;
+  }
+  .wrapper .content2 .pic {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  .wrapper .content2 .laptop-text .number {
+    font-size: 50px;
+    opacity: 0.7;
+  }
+  .wrapper .content2 .laptop-text h4 {
+    margin: 0;
+  }
+  .wrapper .content3 {
+    grid-area: c3;
+    display: flex;
+    margin: 20px;
+  }
+  .wrapper .content3 .pic {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  .wrapper .gaming-text .number {
+    font-size: 50px;
+    opacity: 0.7;
+  }
+  .wrapper .gaming-text h4 {
+    margin: 0;
+  }
+  .wrapper .attribution {
+    grid-area: c4;
+    background-color: #25316d;
+    margin: 20px 0;
+    color: #fff;
+    height: 200px;
+    text-align: justi;
+  }
+  .wrapper .attribution a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    margin: 0 200px;
+  }
+  .logo-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-menu nav ul li {
+    list-style-type: none;
+    float: left;
+    padding-left: 50px;
+  }
+  .logo-menu nav ul li a {
+    text-decoration: none;
+    color: #222;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo nav-bar nav-bar" "web3-img web3-img side" "text about-web3 side" "c1 c2 c3" "c4 c4 c4";
+    grid-auto-flow: row;
+    gap: 20px;
+  }
+  .wrapper .main-menu {
+    display: none;
+    grid-area: menu-bar;
+    width: 30px;
+    height: 5px;
+    background-color: #222;
+    margin: 5px 0;
+  }
+  .wrapper nav {
+    display: none;
+    visibility: hidden;
+  }
+  .wrapper nav ul {
+    background-color: #faf7f0;
+    width: 300px;
+    height: 100vh;
+  }
+  .wrapper nav ul li {
+    list-style-type: none;
+    display: block;
+  }
+  .wrapper nav ul li a {
+    text-decoration: none;
+    color: #222;
+  }
+  .wrapper header {
+    grid-area: logo;
+  }
+  .wrapper nav {
+    grid-area: nav-bar;
+  }
+  .wrapper .web3-img {
+    grid-area: web3-img;
+  }
+  .wrapper .web3-img img {
+    width: 100%;
+  }
+  .wrapper .text {
+    grid-area: text;
+    font-size: 22px;
+  }
+  .wrapper aside {
+    grid-area: side;
+    background-color: #25316d;
+    padding: 10px;
+    padding: 0 20px;
+  }
+  .wrapper aside h1 {
+    color: white;
+    cursor: pointer;
+  }
+  .wrapper aside hr {
+    margin: 10px;
+  }
+  .wrapper aside h3 {
+    font-size: 24px;
+    color: #faf7f0;
+    cursor: pointer;
+  }
+  .wrapper aside p {
+    color: #fff;
+    opacity: 0.6;
+  }
+  .wrapper aside:hover .side-text h1,
+.wrapper aside .heading-text {
+    color: gold;
+  }
+  .wrapper .about-web3 {
+    grid-area: about-web3;
+    margin: 20px 0;
+  }
+  .wrapper .about-web3 p {
+    color: #222;
+    opacity: 0.9;
+  }
+  .wrapper .about-web3 .button {
+    width: 75px;
+    padding: 15px 50px;
+    border: 1px solid #f65a83;
+    background-color: #f65a83;
+  }
+  .wrapper .about-web3 .button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .wrapper .content1 {
+    grid-area: c1;
+    display: flex;
+    margin: 20px;
+  }
+  .wrapper .content1 .pic {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  .wrapper .content1 .retro-text h4 {
+    margin: 0;
+  }
+  .wrapper .content1 .side-text {
+    margin: 2px;
+  }
+  .wrapper .content2 {
+    grid-area: c2;
+    display: flex;
+    margin: 20px;
+  }
+  .wrapper .content2 .pic {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  .wrapper .content2 .laptop-text h4 {
+    margin: 0;
+  }
+  .wrapper .content3 {
+    grid-area: c3;
+    display: flex;
+    margin: 20px;
+  }
+  .wrapper .content3 .pic {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  .wrapper .gaming-text h4 {
+    margin: 0;
+  }
+  .wrapper .attribution {
+    grid-area: c4;
+    background-color: #25316d;
+    margin: 20px 0;
+    color: #fff;
+    height: 200px;
+    text-align: justi;
+  }
+  .wrapper .attribution a {
+    text-decoration: none;
+    color: #fff;
+  }
+}/*# sourceMappingURL=style.css.map */
